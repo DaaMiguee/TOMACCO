@@ -61,7 +61,7 @@ header .navbar div{
     border: red solid 2px;
 }
 button img{
-    height: 40px;
+    height: 20px;
 }
 
 /*------MAIN------*/
@@ -704,13 +704,14 @@ textarea{
     margin: 50px;
 }
 
-.sucursales div{
+.sucursales .maps-container{
     background-color: rgb(245 245 245);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.sucursales div div{
+.sucursales .maps-container .maps{
     background-color: rgb(255, 255, 255);
     display: inline-block;
     height: 348px;
@@ -724,7 +725,7 @@ textarea{
     border-bottom-right-radius: 28px;
 }
 
-.sucursales div div h3{
+.sucursales .maps-container .maps h3{
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -742,7 +743,7 @@ textarea{
     border: 6px solid #00795b;
 }
 
-.sucursales div div iframe{
+.sucursales .maps-container .maps iframe{
     display: flex;
     justify-content: center;
     position: absolute;
