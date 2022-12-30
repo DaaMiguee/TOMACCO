@@ -199,12 +199,10 @@ button img{
 .pizzas .pizzas-container .pproduct .product-description h4{
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
-    line-height: 18px;
+    line-height: 19px;
     font-weight: normal;
     margin: 5px 5px 10px 20px;
     color: #5f5f5f
-    
-    
 }
 
                     /*------Seccion para Empanadas------*/
@@ -510,6 +508,7 @@ button img{
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     font-weight: normal;
+    line-height: 20px;
     margin: 5px 5px 10px 20px;
     color: #5f5f5f;
 }
@@ -641,7 +640,6 @@ textarea{
 
 
 /*----------PAGINA PAGOS----------*/
-
 .titulo-pagos h1{
     font-size: 2rem;
     color: #1cbe72;
@@ -653,6 +651,7 @@ textarea{
     max-width: 95%;
     padding: 0;
     margin: 20px;
+    margin: 0 20px 20px 20px;
     background-color: #1cbe72;
     border-radius: 50%;
     
@@ -661,6 +660,8 @@ textarea{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
 }
 .moto-container{
     margin-top: 20px;
@@ -691,23 +692,22 @@ textarea{
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
+
 .mapas img{
     height: 120px;
+    transition-duration: 0.3s;
+}
+.mapas img:hover{
+    transform: scale(1.04);
+    filter: drop-shadow(0px 0px 4px #000);
 }
 .mapas h2{
     color: #626262;
     font-size: 1.7rem;
     text-align: center;
 }
-/* .mapas a{
-    text-decoration: none;
-    color: #626262;
-    font-size: 2rem;
-    font-weight: 600;
 
-} */
 .pagos-container-tres{
     display: flex;
     justify-content: space-around;
@@ -716,8 +716,11 @@ textarea{
 }
 .metodopago-uno{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 .metodopago-uno img{
@@ -733,7 +736,11 @@ textarea{
 }
 .metodopago-dos{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .metodopago-dos img{
     height: 60px;
@@ -748,6 +755,10 @@ textarea{
 .metodopago-tres{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .metodopago-tres img{
     height: 70px;
@@ -757,6 +768,15 @@ textarea{
     font-size: 1rem;
     color: #626262;
     margin-left: 20px;
+}
+
+.vertical{
+    /* background-color: #1cbe72; */
+    height: 150px;
+    border: 2px solid #1cbe72;
+    border-radius: 50%;
+    margin: 0 30px 0 30px;
+
 }
 
 /*----------PAGINA SUCURSALES----------*/
@@ -772,6 +792,7 @@ textarea{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
+    font-weight: 600;
     color: #626262;
     margin: 50px;
 }
@@ -823,13 +844,13 @@ textarea{
     width: 100%;
 }
 
-.chat{
+.subir{
     position: fixed;
     bottom: 10px;
     right: 10px;
 }
 
-.chat img{
+.subir img{
     width: 30px;
     height: 30px;
 }
@@ -912,6 +933,12 @@ textarea{
 /* MEDIA QUERY
 
 /* responsive */
+@media screen and (max-width:2000px){
+    .subir{
+        display: none;
+    }
+}
+
 @media screen and (max-width:1270px){
     .index-anuncio-container{
         height: auto;
@@ -930,6 +957,9 @@ textarea{
     .combos .combos-grid-container{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
+    }
+    .vertical{
+        display: none;
     }
 }
 
@@ -995,6 +1025,12 @@ textarea{
 }
 
 @media screen and (max-width:680px){
+    header{
+        position: static;
+    }
+    .subir{
+        display:block;
+    }
     .foot-logo{
         justify-content:left;
         margin-left: 30px;
@@ -1050,22 +1086,54 @@ textarea{
 @media screen and (max-width:445px){
     header nav ul li a{
         font-size: 0.5rem;
-        
     }
-    header{
-        position:static;
-
-    }
-
     .titulo-contacto-container h1{
         font-size: 1.2rem;
     }
-
     .titulo-contacto-container h2{
         font-size: 0.9rem;
         line-height: 20px;
     }
+    .moto-container{
+        margin-right: 0;
+    }
+    .moto-container img{
+        height: 75px;
+    }
+    .moto-container h2{
+        font-size: 1rem;
+    }
+    .moto-container h3{
+        font-size: 0.9rem;
+    }
+    .moto-container h4{
+        font-size: 0.7rem;
+    }
+    .metodopago-uno img{
+        height: 50px;
+        margin: 0;
+    }
+    .metodopago-uno h2{
+        font-size: 0.8rem;
+    }
+    .metodopago-dos img{
+        height: 50px;
+        margin: 0;
+    }
+    .metodopago-dos h2{
+        font-size: 0.8rem;
+    }
+    .metodopago-tres img{
+        height: 50px;
+        margin: 0;
+    }
+    .metodopago-tres h2{
+        font-size: 0.8rem;
+    }
+    /* header{
+        position:static; */
 }
+
 @media screen and (max-width:390px){
     .titulo-contacto-container h1{
         font-size: 1rem;
