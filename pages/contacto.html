@@ -63,9 +63,15 @@
             <form action="" method="" enctype="" class="contacto-form">
                 <section>
                     <div>
-                        <input type="text" placeholder="Nombre" class="cuadro" />
-                        <input type="email" placeholder="Email" class="cuadro"/>
-                        <input type="text" placeholder="Asunto" class="cuadro"/>
+                        <input type="text" placeholder="Nombre*" class="cuadro" />
+                        <input type="email" placeholder="Email*" class="cuadro"/>
+                        <!-- <input type="text" placeholder="Asunto" class="cuadro"/> -->
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccionar Asunto*</option>
+                            <option value="1">Opinión</option>
+                            <option value="2">Reclamos</option>
+                            <option value="3">Otros</option>
+                        </select>
                     </div>
                     <div>
                         <textarea name="" id="" cols="34" rows="5" placeholder="Tu consulta y/o comentario"></textarea>
