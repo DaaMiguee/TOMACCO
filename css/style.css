@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,200;1,500&display=swap');
 
 /*------RESET------*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /*------HEADER------*/
-header{
+header {
     background-color: #111111;
     position: sticky;
     top: 0;
@@ -17,86 +17,89 @@ header{
     -webkit-box-shadow: 0px 3px 5px 0px #111111;
     -moz-box-shadow: 0px 3px 5px 0px #111111;
 }
-header .logo-head{
+
+header .logo-head {
     display: block;
     display: flex;
     justify-content: center;
 }
-header .logo-head img{
+
+header .logo-head img {
     width: 90px;
     height: 50px;
 }
 
-.navbar{
+.navbar {
     background-color: #111111;
 }
 
-.nav-item .nav-link{
-    color:rgb(255, 255, 255);
+.nav-item .nav-link {
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
     font-size: 1rem;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
     color: #626262;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     background-color: #111111;
     border: solid 1px rgb(95, 93, 93);
 }
 
-.dropdown-menu li .dropdown-item{
-    color:rgb(255, 255, 255);
+.dropdown-menu li .dropdown-item {
+    color: rgb(255, 255, 255);
 }
 
-.dropdown-menu li .dropdown-item:hover{
+.dropdown-menu li .dropdown-item:hover {
     color: #626262;
 }
 
-header .navbar div{
+header .navbar div {
     display: flex;
     justify-content: center;
 }
 
-.menu{
+.menu {
     border: red solid 2px;
 }
-button img{
+
+button img {
     height: 20px;
+    transition-duration: 0.1s;
 }
-/* .navbar-collapse{
-    display: flex;
-    justify-content: end;
-    background-color: red;
-} */
+button img:active{
+    transform: rotate(90deg);
+}
+
 /*------MAIN------*/
 
 /*----------PAGINA INICIO----------*/
-.index-main{
-    background-color: rgb(245 245 245);
+.index-main {
+    background-color: #ffffff;
 }
 
-.index-anuncio-container{
+.index-anuncio-container {
     height: 58px;
     width: 100%;
     display: flex;
 }
 
-.index-anuncio-container img{
+.index-anuncio-container img {
     height: 58px;
     width: 100%;
     object-fit: cover;
 }
 
-.index-portada-container img{
+.index-portada-container img {
     height: 65vh;
     width: 100%;
     object-fit: cover;
 }
 
-                    /*------Seccion para Pizzas------*/
-.pizzas h2{
+/*------Seccion para Pizzas------*/
+.pizzas h2 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -105,14 +108,16 @@ button img{
     margin: 25px;
 }
 
-.pizzas-container{
+.pizzas-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.pizzas .pizzas-container .pproduct{
-    background-color: rgb(255, 255, 255);
+.pizzas .pizzas-container .pproduct {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(63, 105, 20, 0.066), rgba(243, 244, 243, 0.219) 53%);
+    box-shadow: 0px 0px 8px 2px #1111111c;
     display: inline-block;
     height: 460px;
     width: 255px;
@@ -125,23 +130,28 @@ button img{
     transition-duration: 0.2s;
 }
 
-.pizzas .pizzas-container .pproduct:hover{
-    transform: scale(1.04);
-    box-shadow: 0px 0px 8px 2px #1111112a;
+.pizzas .pizzas-container .pproduct:hover {
+    transform: scale(1.03);
     -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
     -moz-box-shadow: 0px 0px 8px 2px #1111112a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
 }
 
-.pizzas .pizzas-container .pproduct img{
+.pizzas .pizzas-container .pproduct img {
     height: 250px;
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    transition-duration: 1s;
 }
 
-.pizzas .pizzas-container .pproduct p{
+.pizzas .pizzas-container .pproduct img:hover{
+    transform: rotate(5deg);
+}
+
+.pizzas .pizzas-container .pproduct p {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 0.9rem;
@@ -159,16 +169,15 @@ button img{
     position: absolute;
 }
 
-.pizzas .pizzas-container .pproduct a{
+.pizzas .pizzas-container .pproduct a {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 15px;
     text-decoration: none;
     text-align: center;
     padding: 5px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     background-color: #00795b;
-    /* background-color: rgb(64 110 20); */
     right: 10px;
     bottom: 17px;
     width: 100px;
@@ -176,29 +185,26 @@ button img{
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border: 3px solid #00795b;
+    border: 3px solid #9195941f;
     position: absolute;
     transition-duration: 0.3s;
 }
-.pizzas .pizzas-container .pproduct a:hover{
-    background-color: #0b5744;
-    border: 3px solid #0b5744;
+
+.pizzas .pizzas-container .pproduct a:hover {
+    background-color: #18a884;
+    border: 3px solid #18a884;
 }
 
-.pizzas .pizzas-container .pproduct .product-description{
-    background-color: rgb(255, 255, 255);
-}
-
-.pizzas .pproduct .product-description h3{
+.pizzas .pproduct .product-description h3 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1rem;
-    font-weight:600;
+    font-weight: 600;
     color: #5f5f5f;
     margin: 10px;
 }
 
-.pizzas .pizzas-container .pproduct .product-description h4{
+.pizzas .pizzas-container .pproduct .product-description h4 {
     font-family: sans-serif;
     font-size: 0.8rem;
     line-height: 19px;
@@ -207,8 +213,8 @@ button img{
     color: #5f5f5f
 }
 
-                    /*------Seccion para Empanadas------*/
-.empanadas h2{
+/*------Seccion para Empanadas------*/
+.empanadas h2 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -217,14 +223,16 @@ button img{
     margin: 25px;
 }
 
-.empanadas-container{
+.empanadas-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.empanadas .empanadas-container .eproduct{
-    background-color: rgb(255, 255, 255);
+.empanadas .empanadas-container .eproduct {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(63, 105, 20, 0.066), rgba(243, 244, 243, 0.219) 53%);
+    box-shadow: 0px 0px 8px 2px #1111111c;
     display: inline-block;
     height: 460px;
     width: 255px;
@@ -237,23 +245,28 @@ button img{
     transition-duration: 0.2s;
 }
 
-.empanadas .empanadas-container .eproduct:hover{
-    transform: scale(1.04);
-    box-shadow: 0px 0px 8px 2px #1111112a;
+.empanadas .empanadas-container .eproduct:hover {
+    transform: scale(1.03);
     -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
     -moz-box-shadow: 0px 0px 8px 2px #1111112a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
 }
 
-.empanadas .empanadas-container .eproduct img{
+.empanadas .empanadas-container .eproduct img {
     height: 250px;
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    transition-duration: 1s;
 }
 
-.empanadas .empanadas-container .eproduct p{
+.empanadas .empanadas-container .eproduct img:hover{
+    transform: rotate(5deg);
+}
+
+.empanadas .empanadas-container .eproduct p {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 0.9rem;
@@ -271,7 +284,7 @@ button img{
     position: absolute;
 }
 
-.empanadas .empanadas-container .eproduct a{
+.empanadas .empanadas-container .eproduct a {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -291,25 +304,22 @@ button img{
     position: absolute;
     transition-duration: 0.3s;
 }
-.empanadas .empanadas-container .eproduct a:hover{
-    background-color: #0b5744;
-    border: 3px solid #0b5744;
+
+.empanadas .empanadas-container .eproduct a:hover {
+    background-color: #18a884;
+    border: 3px solid #18a884;
 }
 
-.empanadas .empanadas-container .eproduct .product-description{
-    background-color: rgb(255, 255, 255);
-}
-
-.empanadas .eproduct .product-description h3{
+.empanadas .eproduct .product-description h3 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1rem;
-    font-weight:600;
+    font-weight: 600;
     color: #5f5f5f;
     margin: 10px;
 }
 
-.empanadas .empanadas-container .eproduct .product-description h4{
+.empanadas .empanadas-container .eproduct .product-description h4 {
     font-family: sans-serif;
     font-size: 0.8rem;
     line-height: 18px;
@@ -318,8 +328,8 @@ button img{
     color: #5f5f5f
 }
 
-                    /*------Seccion para Complementos------*/
-.complementos h2{
+/*------Seccion para Complementos------*/
+.complementos h2 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -328,14 +338,16 @@ button img{
     margin: 25px;
 }
 
-.complementos-container{
+.complementos-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.complementos .complementos-container .cproduct{
-    background-color: rgb(255, 255, 255);
+.complementos .complementos-container .cproduct {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(63, 105, 20, 0.066), rgba(243, 244, 243, 0.219) 53%);
+    box-shadow: 0px 0px 8px 2px #1111111c;
     display: inline-block;
     height: 460px;
     width: 255px;
@@ -347,23 +359,29 @@ button img{
     position: relative;
     transition-duration: 0.2s;
 }
-.complementos .complementos-container .cproduct:hover{
-    transform: scale(1.04);
-    box-shadow: 0px 0px 8px 2px #1111112a;
+
+.complementos .complementos-container .cproduct:hover {
+    transform: scale(1.03);
     -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
     -moz-box-shadow: 0px 0px 8px 2px #1111112a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
 }
 
-.complementos .complementos-container .cproduct img{
+.complementos .complementos-container .cproduct img {
     height: 250px;
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    transition-duration: 1s;
 }
 
-.complementos .complementos-container .cproduct p{
+.complementos .complementos-container .cproduct img:hover{
+    transform: rotate(5deg);
+}
+
+.complementos .complementos-container .cproduct p {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 0.9rem;
@@ -381,7 +399,7 @@ button img{
     position: absolute;
 }
 
-.complementos .complementos-container .cproduct a{
+.complementos .complementos-container .cproduct a {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -401,25 +419,22 @@ button img{
     position: absolute;
     transition-duration: 0.3s;
 }
-.complementos .complementos-container .cproduct a:hover{
-    background-color: #0b5744;
-    border: 3px solid #0b5744;
+
+.complementos .complementos-container .cproduct a:hover {
+    background-color: #18a884;
+    border: 3px solid #18a884;
 }
 
-.complementos .complementos-container .cproduct .product-description{
-    background-color: rgb(255, 255, 255)
-}
-
-.complementos .cproduct .product-description h3{
+.complementos .cproduct .product-description h3 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1rem;
-    font-weight:600;
+    font-weight: 600;
     color: #5f5f5f;
     margin: 10px;
 }
 
-.complementos .complementos-container .cproduct .product-description h4{
+.complementos .complementos-container .cproduct .product-description h4 {
     font-family: sans-serif;
     font-size: 0.8rem;
     line-height: 18px;
@@ -429,24 +444,28 @@ button img{
 }
 
 /*----------PAGINA COMBOS----------*/
-.combos{
+.comb-main{
+    background-color: #ffffff;
+}
+.combos {
     background-color: rgb(245 245 245);
 }
 
-.combos .combos-title{
+.combos .combos-title {
     display: block;
 }
 
-.combos .combos-title h1{
+.combos .combos-title h1 {
     text-align: center;
     font-family: sans-serif;
     font-size: 1.1rem;
     color: #626262;
     margin-top: 15px;
     font-weight: 600;
-    
+
 }
-.combos .combos-title h2{
+
+.combos .combos-title h2 {
     text-align: center;
     font-family: sans-serif;
     font-size: 1rem;
@@ -455,14 +474,14 @@ button img{
     margin-bottom: 25px;
 }
 
-.combos .combos-grid-container{ 
+.combos .combos-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     justify-items: center;
 }
 
-.combos .combos-grid-container .item-cero{
+.combos .combos-grid-container .item-cero {
     grid-row: 1 / 3;
     /* height: 918px; */
     height: 989px;
@@ -472,33 +491,35 @@ button img{
     border-bottom-right-radius: 15px;
 }
 
-.combos .combos-grid-container .item-cero img{
+.combos .combos-grid-container .item-cero img {
     height: 100%;
     border-radius: 15px;
 }
 
-.combos .combos-grid-container .comb-product{
-        background-color: rgb(255, 255, 255);
-        display: inline-block;
-        height: 460px;
-        width: 255px;
-        margin: 15px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 16px;
-        border-bottom-right-radius: 16px;
-        position: relative;
-        transition-duration: 0.2s;
+.combos .combos-grid-container .comb-product {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(63, 105, 20, 0.066), rgba(243, 244, 243, 0.219) 53%);
+    box-shadow: 0px 0px 8px 2px #1111111c;
+    display: inline-block;
+    height: 460px;
+    width: 255px;
+    margin: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    position: relative;
+    transition-duration: 0.2s;
 }
 
-.combos .combos-grid-container .comb-product:hover{
-    transform: scale(1.04);
-    box-shadow: 0px 0px 8px 2px #1111112a;
+.combos .combos-grid-container .comb-product:hover {
+    transform: scale(1.03);
     -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
     -moz-box-shadow: 0px 0px 8px 2px #1111112a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
 }
 
-.combos .combos-grid-container .comb-product img{
+.combos .combos-grid-container .comb-product img {
     height: 250px;
     width: 100%;
     border-top-left-radius: 15px;
@@ -507,20 +528,16 @@ button img{
     border-bottom-right-radius: 0;
 }
 
-.combos .combos-grid-container .comb-product .comb-description{
-    background-color: rgb(255, 255, 255)
-}
-
-.combos .combos-grid-container .comb-product .comb-description h3{
+.combos .combos-grid-container .comb-product .comb-description h3 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 1.1rem;
-    font-weight:600;
+    font-weight: 600;
     color: #5f5f5f;
     margin: 10px;
 }
 
-.combos .combos-grid-container .comb-product .comb-description h4{
+.combos .combos-grid-container .comb-product .comb-description h4 {
     font-family: sans-serif;
     font-size: 0.8rem;
     font-weight: normal;
@@ -529,7 +546,7 @@ button img{
     color: #5f5f5f;
 }
 
-.combos .combos-grid-container .comb-product p{
+.combos .combos-grid-container .comb-product p {
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 0.9rem;
@@ -547,7 +564,7 @@ button img{
     position: absolute;
 }
 
-.combos .combos-grid-container .comb-product a{
+.combos .combos-grid-container .comb-product a {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -568,28 +585,29 @@ button img{
     transition-duration: 0.3s;
 }
 
-.combos .combos-grid-container .comb-product a:hover{
-    background-color: #0b5744;
-    border: 3px solid #0b5744;
+.combos .combos-grid-container .comb-product a:hover {
+    background-color: #18a884;
+    border: 3px solid #18a884;
 }
 
 
 /*----------PAGINA CONTACTO----------*/
-.contacto-main{
+.contacto-main {
     background-color: #111111;
 }
 
-.titulo-contacto-container{
+.titulo-contacto-container {
     text-align: center;
 }
 
-.titulo-contacto-container h1{
+.titulo-contacto-container h1 {
     font-family: sans-serif, Arial, Helvetica;
     font-size: 1.5rem;
     font-weight: 600;
     color: #d9d7d7;
 }
-.titulo-contacto-container h2{
+
+.titulo-contacto-container h2 {
     font-family: sans-serif, Arial, Helvetica;
     font-size: 1rem;
     font-weight: 400;
@@ -599,19 +617,19 @@ button img{
 
 .form-container {
     z-index: 1;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     max-width: 360px;
     margin: 0px auto 0;
     padding: 45px;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 11px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
     border-radius: 15px;
 }
 
-.form-select{
+.form-select {
     font-family: sans-serif;
     outline: 0;
     background-color: #f2f2f2;
@@ -625,7 +643,7 @@ button img{
     color: #5f5f5f;
 }
 
-textarea{
+textarea {
     background-color: #f2f2f2;
     border: 0;
     padding: 15px;
@@ -634,12 +652,12 @@ textarea{
     border-radius: 10px;
 }
 
-.botones{
+.botones {
     display: flex;
     justify-content: center;
 }
 
-.button{
+.button {
     text-transform: uppercase;
     background-color: #f2f2f2;
     /* background-color: #00795b; */
@@ -651,12 +669,12 @@ textarea{
     border-radius: 100%;
 }
 
-.button:hover{
+.button:hover {
     background-color: #0b5744;
     color: rgb(255, 255, 255);
 }
 
-.cuadro{
+.cuadro {
     font-family: sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -671,13 +689,14 @@ textarea{
 
 
 /*----------PAGINA PAGOS----------*/
-.titulo-pagos h1{
+.titulo-pagos h1 {
     font-size: 2rem;
     color: #1cbe72;
     margin: 20px 0 10px 20px;
     text-align: center;
 }
-.linea{
+
+.linea {
     height: 4px;
     max-width: 95%;
     padding: 0;
@@ -685,16 +704,18 @@ textarea{
     margin: 0 20px 20px 20px;
     background-color: #1cbe72;
     border-radius: 50%;
-    
+
 }
-.pagos-container-dos{
+
+.pagos-container-dos {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
     flex-wrap: wrap;
 }
-.moto-container{
+
+.moto-container {
     margin-top: 20px;
     margin-right: 20px;
     display: flex;
@@ -702,50 +723,57 @@ textarea{
     justify-content: center;
     align-items: center;
 }
-.moto-container img{
+
+.moto-container img {
     height: 110px;
 }
-.moto-container h2{
+
+.moto-container h2 {
     font-size: 1.2rem;
     color: #000000;
 }
-.moto-container h3{
+
+.moto-container h3 {
     font-size: 1.1rem;
     color: #626262;
 }
 
-.moto-container h4{
+.moto-container h4 {
     font-size: 0.8rem;
     color: #626262;
 }
-.mapas{
+
+.mapas {
     margin: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.mapas img{
+.mapas img {
     height: 120px;
     transition-duration: 0.3s;
 }
-.mapas img:hover{
+
+.mapas img:hover {
     transform: scale(1.04);
     filter: drop-shadow(0px 0px 4px #000);
 }
-.mapas h2{
+
+.mapas h2 {
     color: #626262;
     font-size: 1.7rem;
     text-align: center;
 }
 
-.pagos-container-tres{
+.pagos-container-tres {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.metodopago-uno{
+
+.metodopago-uno {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -754,18 +782,21 @@ textarea{
     margin-bottom: 20px;
 
 }
-.metodopago-uno img{
+
+.metodopago-uno img {
     height: 70px;
     margin-left: 20px;
 
 }
-.metodopago-uno h2{
+
+.metodopago-uno h2 {
     font-size: 1rem;
     color: #626262;
     margin-left: 20px;
 
 }
-.metodopago-dos{
+
+.metodopago-dos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -773,17 +804,19 @@ textarea{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.metodopago-dos img{
+
+.metodopago-dos img {
     height: 60px;
     margin-left: 20px;
 }
-.metodopago-dos h2{
+
+.metodopago-dos h2 {
     font-size: 1rem;
     color: #626262;
     margin-left: 20px;
 }
 
-.metodopago-tres{
+.metodopago-tres {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -791,17 +824,19 @@ textarea{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.metodopago-tres img{
+
+.metodopago-tres img {
     height: 70px;
     margin-left: 20px;
 }
-.metodopago-tres h2{
+
+.metodopago-tres h2 {
     font-size: 1rem;
     color: #626262;
     margin-left: 20px;
 }
 
-.vertical{
+.vertical {
     /* background-color: #1cbe72; */
     height: 150px;
     border: 2px solid #1cbe72;
@@ -811,14 +846,14 @@ textarea{
 }
 
 /*----------PAGINA SUCURSALES----------*/
-.sucursales{
+.sucursales {
     background-color: rgb(245 245 245);
     display: inline-block;
     justify-content: center;
     width: 100%;
 }
 
-.sucursales h2{
+.sucursales h2 {
     background-color: rgb(245 245 245);
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -828,14 +863,14 @@ textarea{
     margin: 50px;
 }
 
-.sucursales .maps-container{
+.sucursales .maps-container {
     background-color: rgb(245 245 245);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.sucursales .maps-container .maps{
+.sucursales .maps-container .maps {
     background-color: rgb(255, 255, 255);
     display: inline-block;
     height: 348px;
@@ -843,13 +878,13 @@ textarea{
     border: 2px solid #00795b16;
     margin: 30px 15px 30px 15px;
     position: relative;
-    border-top-left-radius: 27px;
-    border-top-right-radius: 27px;
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.sucursales .maps-container .maps h3{
+.sucursales .maps-container .maps h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -860,14 +895,14 @@ textarea{
     position: absolute;
     top: 0px;
     width: 100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border: 6px solid #00795b;
 }
 
-.sucursales .maps-container .maps iframe{
+.sucursales .maps-container .maps iframe {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -875,31 +910,31 @@ textarea{
     width: 100%;
 }
 
-.subir{
+.subir {
     position: fixed;
     bottom: 10px;
     right: 10px;
 }
 
-.subir img{
+.subir img {
     width: 30px;
     height: 30px;
 }
 
 /*------FOOTER------*/
-.footer-grid{
+.footer-grid {
     background-color: #111111;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 130px 130px;
-    grid-template-areas: 
-    "logo logo logo"
-    "horario derechos redes"
+    grid-template-areas:
+        "logo logo logo"
+        "horario derechos redes"
     ;
 }
 
-.foot-logo{
-    display:inline-block;
+.foot-logo {
+    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -907,53 +942,53 @@ textarea{
     grid-area: logo;
 }
 
-.foot-logo img{
+.foot-logo img {
     height: 80px;
     width: 140px;
 }
 
-.foot-redes{
+.foot-redes {
     display: flex;
-    flex-direction:row;
-    justify-content:center;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     grid-area: redes;
 }
 
-.foot-redes a img{
+.foot-redes a img {
     height: 50px;
     width: 50px;
     margin: 5px;
 }
 
-.foot-redes p{
+.foot-redes p {
     color: rgb(255, 255, 255);
     font-family: sans-serif, Arial, Helvetica, 'Poppins';
     margin: 15px;
     font-size: 1rem;
 }
 
-.foot-horario{
+.foot-horario {
     display: flex;
     justify-content: start;
     grid-area: horario;
 }
 
-.foot-horario p{
+.foot-horario p {
     color: white;
     font-family: sans-serif, Arial, Helvetica;
     font-size: small;
     margin: 1rem;
 }
 
-.foot-derechos{
+.foot-derechos {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     grid-area: derechos;
 }
 
-.foot-derechos p{
+.foot-derechos p {
     color: rgb(255, 255, 255);
     font-family: sans-serif, Arial, Helvetica, 'Poppins';
     font-size: x-small;
@@ -964,213 +999,256 @@ textarea{
 /* MEDIA QUERY
 
 /* responsive */
-@media screen and (max-width:2000px){
-    .subir{
+@media screen and (max-width:2000px) {
+    .subir {
         display: none;
     }
 }
 
-@media screen and (max-width:1270px){
-    .index-anuncio-container{
+@media screen and (max-width:1270px) {
+    .index-anuncio-container {
         height: auto;
         width: 100%;
     }
-    .index-anuncio-container img{
+
+    .index-anuncio-container img {
         height: auto;
         width: 100%;
     }
-    .index-portada-container img{
+
+    .index-portada-container img {
         height: auto;
         width: 100%;
     }
 }
-@media screen and (max-width:1160px){
-    .combos .combos-grid-container{
+
+@media screen and (max-width:1160px) {
+    .combos .combos-grid-container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
     }
-    .vertical{
+
+    .vertical {
         display: none;
     }
 }
 
-@media screen and (max-width:1140px){
-    .pizzas-container{
+@media screen and (max-width:1140px) {
+    .pizzas-container {
         justify-content: space-around;
     }
-    .empanadas-container{
+
+    .empanadas-container {
         justify-content: space-around;
     }
-    .complementos-container{
+
+    .complementos-container {
         justify-content: space-around;
     }
 }
 
-@media screen and (max-width:980px){
-    .foot-horario p{
+@media screen and (max-width:980px) {
+    .foot-horario p {
         font-size: 0.6rem;
     }
 }
-@media screen and (max-width:880px){
-    .combos .combos-grid-container{
+
+@media screen and (max-width:880px) {
+    .combos .combos-grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
     }
-    .item-cero{
+
+    .item-cero {
         display: none;
     }
 }
 
-@media screen and (max-width:860px){
-    .foot-redes p{
+@media screen and (max-width:860px) {
+    .foot-redes p {
         font-size: 0.7rem;
     }
-    .footer-grid{
+
+    .footer-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 130px 130px;
-        grid-template-areas: 
-        "logo redes"
-        "horario derechos"
+        grid-template-areas:
+            "logo redes"
+            "horario derechos"
         ;
     }
-    .foot-logo{
+
+    .foot-logo {
         grid-column: 1 /2;
-        justify-content:left;
+        justify-content: left;
         margin-left: 100px;
     }
-    .foot-horario{
+
+    .foot-horario {
         margin-left: 80px;
     }
-    .foot-redes{
-        justify-content:end;
+
+    .foot-redes {
+        justify-content: end;
         margin-right: 100px;
     }
-    .foot-derechos{
-        justify-content:flex-end;
+
+    .foot-derechos {
+        justify-content: flex-end;
         margin-right: 100px;
         margin-bottom: 10px;
     }
-    .foot-derechos p{
+
+    .foot-derechos p {
         font-size: 0.5rem;
     }
 }
 
-@media screen and (max-width:680px){
-    header{
+@media screen and (max-width:680px) {
+    header {
         position: static;
     }
-    .subir{
-        display:block;
+
+    .subir {
+        display: block;
     }
-    .foot-logo{
-        justify-content:left;
+
+    .foot-logo {
+        justify-content: left;
         margin-left: 30px;
     }
-    .foot-horario{
+
+    .foot-horario {
         margin-left: 30px;
     }
-    .foot-redes{
-        justify-content:end;
+
+    .foot-redes {
+        justify-content: end;
         margin-right: 30px;
     }
-    .foot-derechos{
-        justify-content:flex-end;
+
+    .foot-derechos {
+        justify-content: flex-end;
         margin-right: 30px;
         margin-bottom: 10px;
     }
 }
-@media screen and (max-width:600px){
-    .combos .combos-grid-container{
+
+@media screen and (max-width:600px) {
+    .combos .combos-grid-container {
         grid-template-columns: 1fr;
-        grid-template-rows: auto ;
+        grid-template-rows: auto;
     }
 }
 
-@media screen and (max-width:560px){
-    .footer-grid{
+@media screen and (max-width:560px) {
+    .footer-grid {
         grid-template-columns: 1fr;
         grid-template-rows: 130px 130px 130px;
-        grid-template-areas: 
-        "logo"
-        "redes"
-        "horario"
-        "derechos"
+        grid-template-areas:
+            "logo"
+            "redes"
+            "horario"
+            "derechos"
         ;
     }
-    .foot-logo{
+    .foot-logo {
         justify-content: center;
         margin: 0;
     }
-    .foot-redes{
+    .foot-redes {
         justify-content: center;
         margin: 0;
     }
-    .foot-horario{
+    .foot-horario {
         justify-content: center;
         margin: 0;
     }
-    .foot-derechos{
+    .foot-derechos {
         justify-content: center;
         margin: 0;
     }
 }
-@media screen and (max-width:445px){
-    header nav ul li a{
+
+@media screen and (max-width:445px) {
+    header nav ul li a {
         font-size: 0.5rem;
     }
-    .titulo-contacto-container h1{
+    .pizzas .pizzas-container .pproduct{
+        height: 510px;
+        width: 305px;
+    }
+    .pizzas .pizzas-container .pproduct img{
+        height: 300px;
+    }
+    .empanadas .empanadas-container .eproduct{
+        height: 510px;
+        width: 305px;
+    }
+    .empanadas .empanadas-container .eproduct img{
+        height: 300px;
+    }
+    .complementos .complementos-container .cproduct{
+        height: 510px;
+        width: 305px;
+    }
+    .complementos .complementos-container .cproduct img{
+        height: 300px;
+    }
+
+    .titulo-contacto-container h1 {
         font-size: 1.2rem;
     }
-    .titulo-contacto-container h2{
+    .titulo-contacto-container h2 {
         font-size: 0.9rem;
         line-height: 20px;
     }
-    .moto-container{
+    .moto-container {
         margin-right: 0;
     }
-    .moto-container img{
+    .moto-container img {
         height: 75px;
     }
-    .moto-container h2{
+    .moto-container h2 {
         font-size: 1rem;
     }
-    .moto-container h3{
+    .moto-container h3 {
         font-size: 0.9rem;
     }
-    .moto-container h4{
+    .moto-container h4 {
         font-size: 0.7rem;
     }
-    .metodopago-uno img{
+    .metodopago-uno img {
         height: 50px;
         margin: 0;
     }
-    .metodopago-uno h2{
+    .metodopago-uno h2 {
         font-size: 0.8rem;
     }
-    .metodopago-dos img{
+    .metodopago-dos img {
         height: 50px;
         margin: 0;
     }
-    .metodopago-dos h2{
+    .metodopago-dos h2 {
         font-size: 0.8rem;
     }
-    .metodopago-tres img{
+    .metodopago-tres img {
         height: 50px;
         margin: 0;
     }
-    .metodopago-tres h2{
+    .metodopago-tres h2 {
         font-size: 0.8rem;
     }
     /* header{
         position:static; */
 }
 
-@media screen and (max-width:390px){
-    .titulo-contacto-container h1{
+@media screen and (max-width:390px) {
+    .titulo-contacto-container h1 {
         font-size: 1rem;
     }
 
-    .titulo-contacto-container h2{
+    .titulo-contacto-container h2 {
         font-size: 0.8rem;
         line-height: 17px;
     }
@@ -1179,11 +1257,11 @@ textarea{
         max-width: 320px;
     }
 
-    textarea{
+    textarea {
         max-width: 230px;
     }
 
-    .button{
+    .button {
         font-size: 0.7rem;
     }
 }
