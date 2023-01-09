@@ -46,31 +46,34 @@ header .logo-head img {
 .dropdown-menu {
     background-color: #111111;
     border: solid 1px rgb(95, 93, 93);
+    /* text-align: center; */
+
+
+}
+.dropdown-menu li{
+    display: inline-block;
+
+
 }
 
 .dropdown-menu li .dropdown-item {
     color: rgb(255, 255, 255);
+
 }
 
 .dropdown-menu li .dropdown-item:hover {
     color: #626262;
 }
 
-header .navbar div {
-    display: flex;
-    justify-content: center;
+.navbar-nav{
+text-align: center;
 }
-
-.menu {
-    border: red solid 2px;
+.collapse{
+    justify-content: center;
 }
 
 button img {
     height: 20px;
-    transition-duration: 0.1s;
-}
-button img:active{
-    transform: rotate(90deg);
 }
 
 /*------MAIN------*/
@@ -92,11 +95,11 @@ button img:active{
     object-fit: cover;
 }
 
-.index-portada-container img {
+/* .index-portada-container img {
     height: 65vh;
     width: 100%;
     object-fit: cover;
-}
+} */
 
 /*------Seccion para Pizzas------*/
 .pizzas h2 {

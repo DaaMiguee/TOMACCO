@@ -1,0 +1,941 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,200;1,500&display=swap");
+/*------RESET------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*-----HEADER-----*/
+Header {
+  background-color: #111111;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0px 3px 5px 0px #111111;
+  -webkit-box-shadow: 0px 3px 5px 0px #111111;
+  -moz-box-shadow: 0px 3px 5px 0px #111111; }
+  Header .logo-head {
+    display: block;
+    display: flex;
+    justify-content: center; }
+    Header .logo-head a img {
+      width: 90px;
+      height: 50px; }
+  Header .navbar {
+    background-color: #111111; }
+    Header .navbar .container-fluid .navbar-toggler img {
+      height: 20px; }
+    Header .navbar .container-fluid .collapse {
+      justify-content: center; }
+      Header .navbar .container-fluid .collapse .navbar-nav {
+        text-align: center; }
+        Header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+          color: #ffffff;
+          font-family: sans-serif;
+          font-size: 0.9rem; }
+          Header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+            color: #111111;
+            background-color: #ffffff;
+            border-radius: 2px; }
+        Header .navbar .container-fluid .collapse .navbar-nav .nav-item .dropdown-menu {
+          background-color: #111111;
+          border: solid 1px #5f5d5d; }
+          Header .navbar .container-fluid .collapse .navbar-nav .nav-item .dropdown-menu li {
+            display: inline-block; }
+            Header .navbar .container-fluid .collapse .navbar-nav .nav-item .dropdown-menu li .dropdown-item {
+              color: white; }
+              Header .navbar .container-fluid .collapse .navbar-nav .nav-item .dropdown-menu li .dropdown-item:hover {
+                color: #626262; }
+
+/*-----MAIN INDEX-----*/
+.index-main {
+  background-color: #ffffff; }
+  .index-main section .index-anuncio-container {
+    height: 58px;
+    width: 100%;
+    display: flex; }
+    .index-main section .index-anuncio-container img {
+      height: 58px;
+      width: 100%;
+      object-fit: cover; }
+  .index-main .pizzas h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #626262;
+    margin: 25px; }
+  .index-main .pizzas .pizzas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .index-main .pizzas .pizzas-container .pproduct {
+      background: white;
+      background: linear-gradient(0deg, rgba(63, 105, 20, 0.066), rgba(243, 244, 243, 0.219) 53%);
+      box-shadow: 0px 0px 8px 2px #1111111c;
+      display: inline-block;
+      height: 460px;
+      width: 255px;
+      margin: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      position: relative;
+      transition-duration: 0.2s; }
+      .index-main .pizzas .pizzas-container .pproduct:hover {
+        transform: scale(1.03);
+        -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
+        -moz-box-shadow: 0px 0px 8px 2px #1111112a;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.479); }
+      .index-main .pizzas .pizzas-container .pproduct img {
+        height: 250px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition-duration: 1s; }
+        .index-main .pizzas .pizzas-container .pproduct img:hover {
+          transform: rotate(5deg); }
+      .index-main .pizzas .pizzas-container .pproduct .product-description h3 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #5f5f5f;
+        margin: 10px; }
+      .index-main .pizzas .pizzas-container .pproduct .product-description h4 {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        line-height: 19px;
+        font-weight: normal;
+        margin: 5px 5px 10px 20px;
+        color: #5f5f5f; }
+      .index-main .pizzas .pizzas-container .pproduct a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        color: #ffffff;
+        background-color: #00795b;
+        right: 10px;
+        bottom: 17px;
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute;
+        transition-duration: 0.3s; }
+        .index-main .pizzas .pizzas-container .pproduct a:hover {
+          background-color: #18a884;
+          border: 3px solid #18a884; }
+      .index-main .pizzas .pizzas-container .pproduct p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        color: #5f5f5f;
+        bottom: 0px;
+        left: 10px;
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute; }
+  .index-main .empanadas h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #626262;
+    margin: 25px; }
+  .index-main .empanadas .empanadas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .index-main .empanadas .empanadas-container .eproduct {
+      background: white;
+      background: linear-gradient(0deg, rgba(63, 105, 20, 0.066), rgba(243, 244, 243, 0.219) 53%);
+      box-shadow: 0px 0px 8px 2px #1111111c;
+      display: inline-block;
+      height: 460px;
+      width: 255px;
+      margin: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      position: relative;
+      transition-duration: 0.2s; }
+      .index-main .empanadas .empanadas-container .eproduct:hover {
+        transform: scale(1.03);
+        -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
+        -moz-box-shadow: 0px 0px 8px 2px #1111112a;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.479); }
+      .index-main .empanadas .empanadas-container .eproduct img {
+        height: 250px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition-duration: 1s; }
+        .index-main .empanadas .empanadas-container .eproduct img:hover {
+          transform: rotate(5deg); }
+      .index-main .empanadas .empanadas-container .eproduct .product-description h3 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #5f5f5f;
+        margin: 10px; }
+      .index-main .empanadas .empanadas-container .eproduct .product-description h4 {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        line-height: 18px;
+        font-weight: normal;
+        margin: 5px 5px 10px 20px;
+        color: #5f5f5f; }
+      .index-main .empanadas .empanadas-container .eproduct a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        color: white;
+        background-color: #00795b;
+        right: 10px;
+        bottom: 17px;
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #00795b;
+        position: absolute;
+        transition-duration: 0.3s; }
+        .index-main .empanadas .empanadas-container .eproduct a:hover {
+          background-color: #18a884;
+          border: 3px solid #18a884; }
+      .index-main .empanadas .empanadas-container .eproduct p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        color: #5f5f5f;
+        bottom: 0px;
+        left: 10px;
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute; }
+  .index-main .complementos h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #626262;
+    margin: 25px; }
+  .index-main .complementos .complementos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .index-main .complementos .complementos-container .cproduct {
+      background: white;
+      background: linear-gradient(0deg, rgba(63, 105, 20, 0.066), rgba(243, 244, 243, 0.219) 53%);
+      box-shadow: 0px 0px 8px 2px #1111111c;
+      display: inline-block;
+      height: 460px;
+      width: 255px;
+      margin: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      position: relative;
+      transition-duration: 0.2s; }
+      .index-main .complementos .complementos-container .cproduct:hover {
+        transform: scale(1.03);
+        -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
+        -moz-box-shadow: 0px 0px 8px 2px #1111112a;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.479); }
+      .index-main .complementos .complementos-container .cproduct img {
+        height: 250px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition-duration: 1s; }
+        .index-main .complementos .complementos-container .cproduct img:hover {
+          transform: rotate(5deg); }
+      .index-main .complementos .complementos-container .cproduct .product-description h3 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #5f5f5f;
+        margin: 10px; }
+      .index-main .complementos .complementos-container .cproduct .product-description h4 {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        line-height: 18px;
+        font-weight: normal;
+        margin: 5px 5px 10px 20px;
+        color: #5f5f5f; }
+      .index-main .complementos .complementos-container .cproduct a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        color: white;
+        background-color: #00795b;
+        right: 10px;
+        bottom: 17px;
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #00795b;
+        position: absolute;
+        transition-duration: 0.3s; }
+        .index-main .complementos .complementos-container .cproduct a:hover {
+          background-color: #18a884;
+          border: 3px solid #18a884; }
+      .index-main .complementos .complementos-container .cproduct p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        color: #5f5f5f;
+        bottom: 0px;
+        left: 10px;
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute; }
+
+/*-----MAIN COMBOs-----*/
+.comb-main {
+  background-color: #ffffff; }
+  .comb-main .combos {
+    background-color: #ffffff; }
+    .comb-main .combos .combos-title {
+      display: block; }
+      .comb-main .combos .combos-title h1 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        color: #626262;
+        margin-top: 15px;
+        font-weight: 600; }
+      .comb-main .combos .combos-title h2 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1rem;
+        color: #626262;
+        font-weight: 600;
+        margin-bottom: 25px; }
+  .comb-main .combos-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center; }
+    .comb-main .combos-grid-container .item-cero {
+      grid-row: 1 / 3;
+      height: 989px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px; }
+      .comb-main .combos-grid-container .item-cero img {
+        height: 100%;
+        border-radius: 15px; }
+    .comb-main .combos-grid-container .comb-product {
+      background-color: #ffffff;
+      background: linear-gradient(0deg, rgba(63, 105, 20, 0.066), rgba(243, 244, 243, 0.219) 53%);
+      box-shadow: 0px 0px 8px 2px #1111111c;
+      display: inline-block;
+      height: 460px;
+      width: 255px;
+      margin: 15px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      position: relative;
+      transition-duration: 0.2s; }
+      .comb-main .combos-grid-container .comb-product:hover {
+        transform: scale(1.03);
+        -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
+        -moz-box-shadow: 0px 0px 8px 2px #1111112a;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.479); }
+      .comb-main .combos-grid-container .comb-product img {
+        height: 250px;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0; }
+      .comb-main .combos-grid-container .comb-product .comb-description h3 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #5f5f5f;
+        margin: 10px; }
+      .comb-main .combos-grid-container .comb-product .comb-description h4 {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        font-weight: normal;
+        line-height: 20px;
+        margin: 5px 5px 10px 20px;
+        color: #5f5f5f; }
+      .comb-main .combos-grid-container .comb-product p {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        color: #5f5f5f;
+        bottom: 0px;
+        left: 10px;
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute; }
+      .comb-main .combos-grid-container .comb-product a {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        color: white;
+        background-color: #00795b;
+        right: 10px;
+        bottom: 17px;
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border: 3px solid #00795b;
+        position: absolute;
+        transition-duration: 0.3s; }
+        .comb-main .combos-grid-container .comb-product a:hover {
+          background-color: #18a884;
+          border: 3px solid #18a884; }
+
+/*-----MAIN CONTACTO-----*/
+.contacto-main {
+  background-color: #111111; }
+  .contacto-main .titulo-contacto-container {
+    text-align: center; }
+    .contacto-main .titulo-contacto-container h1 {
+      font-family: sans-serif, Arial, Helvetica;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #d9d7d7; }
+    .contacto-main .titulo-contacto-container h2 {
+      font-family: sans-serif, Arial, Helvetica;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #d9d7d7;
+      margin: 25px; }
+  .contacto-main .form-container {
+    z-index: 1;
+    max-width: 360px;
+    margin: 0px auto 0;
+    padding: 45px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 15px; }
+    .contacto-main .form-container .contacto-form section div .cuadro {
+      font-family: sans-serif;
+      outline: 0;
+      background: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+      border-radius: 10px; }
+    .contacto-main .form-container .contacto-form section div .form-select {
+      font-family: sans-serif;
+      outline: 0;
+      background-color: #f2f2f2;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+      border-radius: 10px;
+      color: #5f5f5f; }
+    .contacto-main .form-container .contacto-form section div textarea {
+      background-color: #f2f2f2;
+      border: 0;
+      padding: 15px;
+      font-size: 0.9rem;
+      resize: none;
+      border-radius: 10px; }
+    .contacto-main .form-container .contacto-form section .botones {
+      display: flex;
+      justify-content: center; }
+      .contacto-main .form-container .contacto-form section .botones .button {
+        text-transform: uppercase;
+        background-color: #f2f2f2;
+        border: 0;
+        padding: 15px;
+        font-size: 0.9rem;
+        width: 50%;
+        border-radius: 100%;
+        transition-duration: 0.3s; }
+        .contacto-main .form-container .contacto-form section .botones .button:hover {
+          background-color: #0b5744;
+          color: white; }
+
+/*-----MAIN PAGOS-----*/
+.main-combos {
+  background-color: #ffffff; }
+  .main-combos .titulo-pagos h1 {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 1.9rem;
+    color: #1cbe72;
+    margin: 20px 0 10px 20px;
+    text-align: center; }
+  .main-combos .linea {
+    height: 4px;
+    max-width: 95%;
+    padding: 0;
+    margin: 20px;
+    margin: 0 20px 20px 20px;
+    background-color: #1cbe72;
+    border-radius: 50%; }
+  .main-combos .pagos-container-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap; }
+    .main-combos .pagos-container-dos .moto-container {
+      margin-top: 20px;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main-combos .pagos-container-dos .moto-container img {
+        height: 110px; }
+      .main-combos .pagos-container-dos .moto-container h2 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 1.1rem;
+        color: #000000; }
+      .main-combos .pagos-container-dos .moto-container h3 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 1rem;
+        color: #626262; }
+      .main-combos .pagos-container-dos .moto-container h4 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 0.8rem;
+        color: #626262; }
+    .main-combos .pagos-container-dos .mapas {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .main-combos .pagos-container-dos .mapas h2 {
+        color: #626262;
+        font-size: 1.7rem;
+        text-align: center; }
+      .main-combos .pagos-container-dos .mapas a img {
+        height: 120px;
+        transition-duration: 0.3s; }
+        .main-combos .pagos-container-dos .mapas a img:hover {
+          transform: scale(1.04);
+          filter: drop-shadow(0px 0px 4px #000); }
+  .main-combos .pagos-container-tres {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .main-combos .pagos-container-tres .metodopago-uno {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .main-combos .pagos-container-tres .metodopago-uno img {
+        height: 70px;
+        margin-left: 20px; }
+      .main-combos .pagos-container-tres .metodopago-uno h2 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 0.9rem;
+        color: #626262;
+        margin-left: 20px; }
+    .main-combos .pagos-container-tres .vertical {
+      height: 150px;
+      border: 2px solid #1cbe72;
+      border-radius: 50%;
+      margin: 0 30px 0 30px; }
+    .main-combos .pagos-container-tres .metodopago-dos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .main-combos .pagos-container-tres .metodopago-dos img {
+        height: 60px;
+        margin-left: 20px; }
+      .main-combos .pagos-container-tres .metodopago-dos h2 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 0.9rem;
+        color: #626262;
+        margin-left: 20px; }
+    .main-combos .pagos-container-tres .metodopago-tres {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .main-combos .pagos-container-tres .metodopago-tres img {
+        height: 70px;
+        margin-left: 20px; }
+      .main-combos .pagos-container-tres .metodopago-tres h2 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 0.9rem;
+        color: #626262;
+        margin-left: 20px; }
+
+/*-----MAIN SUCURSALES-----*/
+.main-sucursales {
+  background-color: #ffffff; }
+  .main-sucursales .sucursales {
+    background-color: #ffffff;
+    display: inline-block;
+    justify-content: center;
+    width: 100%; }
+    .main-sucursales .sucursales h2 {
+      background-color: #ffffff;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #626262;
+      margin: 50px; }
+    .main-sucursales .sucursales .maps-container {
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .main-sucursales .sucursales .maps-container .maps {
+        background-color: #ffffff;
+        display: inline-block;
+        height: 348px;
+        width: 402px;
+        border: 2px solid #00795b16;
+        margin: 30px 15px 30px 15px;
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; }
+        .main-sucursales .sucursales .maps-container .maps h3 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          text-align: center;
+          padding: 5px;
+          color: white;
+          background-color: #00795b;
+          position: absolute;
+          top: 0px;
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          border: 6px solid #00795b; }
+        .main-sucursales .sucursales .maps-container .maps iframe {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          bottom: 0px;
+          width: 100%; }
+
+/*-----FOOTER-----*/
+Footer .footer-grid {
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 130px 130px;
+  grid-template-areas: "logo logo logo" "horario derechos redes"; }
+  Footer .footer-grid .foot-logo {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-area: logo; }
+    Footer .footer-grid .foot-logo img {
+      height: 80px;
+      width: 140px; }
+  Footer .footer-grid .foot-horario {
+    display: flex;
+    justify-content: start;
+    grid-area: horario; }
+    Footer .footer-grid .foot-horario p {
+      color: white;
+      font-family: sans-serif, Arial, Helvetica;
+      font-size: small;
+      margin: 1rem; }
+  Footer .footer-grid .foot-derechos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: derechos; }
+    Footer .footer-grid .foot-derechos p {
+      color: white;
+      font-family: sans-serif, Arial, Helvetica, 'Poppins';
+      font-size: x-small;
+      text-align: center; }
+  Footer .footer-grid .foot-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: redes; }
+    Footer .footer-grid .foot-redes p {
+      color: white;
+      font-family: sans-serif, Arial, Helvetica, 'Poppins';
+      margin: 15px;
+      font-size: 1rem; }
+    Footer .footer-grid .foot-redes a img {
+      height: 50px;
+      width: 50px;
+      margin: 5px; }
+
+/*-----FIXED-----*/
+.subir {
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+  .subir a img {
+    width: 30px;
+    height: 30px; }
+
+/*----- MEDIA QUERYS -----*/
+@media screen and (max-width: 2000px) {
+  .subir {
+    display: none; } }
+
+@media screen and (max-width: 1270px) {
+  .index-main section .index-anuncio-container {
+    height: auto;
+    width: 100%; }
+  .index-main section .index-anuncio-container img {
+    height: auto;
+    width: 100%; } }
+
+@media screen and (max-width: 1160px) {
+  .comb-main .combos .combos-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; } }
+
+@media screen and (max-width: 1140px) {
+  .index-main .pizzas .pizzas-container {
+    justify-content: space-around; }
+  .index-main .empanadas .empanadas-container {
+    justify-content: space-around; }
+  .index-main .complementos .complementos-container {
+    justify-content: space-around; }
+  .main-combos .pagos-container-tres .vertical {
+    display: none; } }
+
+@media screen and (max-width: 980px) {
+  .main-combos .titulo-pagos h1 {
+    font-size: 1.7rem; }
+  footer .footer-grid .foot-horario p {
+    font-size: 0.6rem; }
+  footer .footer-grid .foot-derechos p {
+    font-size: 0.6rem; } }
+
+@media screen and (max-width: 880px) {
+  .comb-main .combos .combos-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+  .comb-main .combos .combos-grid-container .item-cero {
+    display: none; } }
+
+@media screen and (max-width: 860px) {
+  footer .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 130px 130px;
+    grid-template-areas: "logo redes" "horario derechos"; }
+  footer .footer-grid .foot-logo {
+    grid-column: 1 /2;
+    justify-content: left;
+    margin-left: 100px; }
+  footer .footer-grid .foot-horario {
+    margin-left: 80px; }
+  footer .footer-grid .foot-redes {
+    justify-content: end;
+    margin-right: 100px; }
+  footer .footer-grid .foot-redes p {
+    font-size: 0.7rem; }
+  footer .footer-grid .foot-derechos {
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-bottom: 10px; }
+  footer .footer-grid .foot-derechos p {
+    font-size: 0.5rem; } }
+
+@media screen and (max-width: 680px) {
+  header {
+    position: static; }
+  .subir {
+    display: block; }
+  footer .footer-grid .foot-logo {
+    justify-content: left;
+    margin-left: 30px; }
+  footer .footer-grid .foot-horario {
+    margin-left: 30px; }
+  footer .footer-grid .foot-redes {
+    justify-content: end;
+    margin-right: 30px; }
+  footer .footer-grid .foot-derechos {
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-bottom: 10px; } }
+
+@media screen and (max-width: 600px) {
+  .comb-main .combos .combos-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; } }
+
+@media screen and (max-width: 560px) {
+  .main-combos .titulo-pagos h1 {
+    font-size: 1.6rem; }
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 130px 130px;
+    grid-template-areas: "logo" "redes" "horario" "derechos"; }
+  footer .footer-grid .foot-logo {
+    justify-content: center;
+    margin: 0; }
+  footer .footer-grid .foot-redes {
+    justify-content: center;
+    margin: 0; }
+  footer .footer-grid .foot-horario {
+    justify-content: center;
+    margin: 0; }
+  footer .footer-grid .foot-derechos {
+    justify-content: center;
+    margin: 0; } }
+
+@media screen and (max-width: 445px) {
+  header nav ul li a {
+    font-size: 0.8rem; }
+  .index-main .pizzas .pizzas-container .pproduct {
+    height: 510px;
+    width: 305px; }
+  .index-main .pizzas .pizzas-container .pproduct img {
+    height: 300px; }
+  .index-main .empanadas .empanadas-container .eproduct {
+    height: 510px;
+    width: 305px; }
+  .index-main .empanadas .empanadas-container .eproduct img {
+    height: 300px; }
+  .index-main .complementos .complementos-container .cproduct {
+    height: 510px;
+    width: 305px; }
+  .index-main .complementos .complementos-container .cproduct img {
+    height: 300px; }
+  .contacto-main .titulo-contacto-container h1 {
+    font-size: 1.2rem; }
+  .contacto-main .titulo-contacto-container h2 {
+    font-size: 0.9rem;
+    line-height: 20px; }
+  .main-combos.pagos-container-dos .moto-container {
+    margin-right: 0; }
+  .main-combos.pagos-container-dos .moto-container img {
+    height: 75px; }
+  .main-combos.pagos-container-dos .moto-container h2 {
+    font-size: 1rem; }
+  .main-combos.pagos-container-dos .moto-container h3 {
+    font-size: 0.9rem; }
+  .main-combos.pagos-container-dos .moto-container h4 {
+    font-size: 0.7rem; }
+  .main-combos .pagos-container-tres .metodopago-uno img {
+    height: 50px;
+    margin: 0; }
+  .main-combos .pagos-container-tres .metodopago-uno h2 {
+    font-size: 0.8rem; }
+  .main-combos .pagos-container-tres .metodopago-dos img {
+    height: 50px;
+    margin: 0; }
+  .main-combos .pagos-container-tres .metodopago-dos h2 {
+    font-size: 0.8rem; }
+  .main-combos .pagos-container-tres .metodopago-tres img {
+    height: 50px;
+    margin: 0; }
+  .main-combos .pagos-container-tres .metodopago-tres h2 {
+    font-size: 0.8rem; }
+  .main-combos .pagos-container-dos .moto-container h2 {
+    font-size: 1rem; }
+  .main-combos .pagos-container-dos .moto-container h3 {
+    font-size: 1rem; }
+  .main-combos .pagos-container-dos .moto-container h4 {
+    font-size: 0.7rem; } }
+
+@media screen and (max-width: 390px) {
+  .contacto-main .titulo-contacto-container h1 {
+    font-size: 1rem; }
+  .contacto-main .titulo-contacto-container h2 {
+    font-size: 0.8rem;
+    line-height: 17px; }
+  .contacto-main .form-container {
+    max-width: 320px; }
+  .contacto-main .form-container .contacto-form section div textarea {
+    max-width: 230px; }
+  .contacto-main .form-container .contacto-form section .botones .button {
+    font-size: 0.7rem; }
+  .main-combos .pagos-container-tres .metodopago-tres h2 {
+    font-size: 0.7rem; }
+  .main-combos .pagos-container-dos .moto-container h2 {
+    font-size: 0.9rem; }
+  .main-combos .pagos-container-dos .moto-container h3 {
+    font-size: 0.9rem; }
+  .main-combos .pagos-container-dos .moto-container h4 {
+    font-size: 0.6rem; } }
