@@ -34,7 +34,7 @@
     .index-main .complementos .complementos-container {
         justify-content: space-around;
     }
-    .main-combos .pagos-container-tres .vertical {
+    .main-pagos .pagos-container-tres .vertical {
         display: none;
     }
 }
@@ -163,18 +163,18 @@
     header nav ul li a {
         font-size: 0.8rem;
     }
-    .index-main .pizzas .pizzas-container .pproduct{
+    .index-main .pizzas .pizzas-container .aproduct{
         height: 510px;
         width: 305px;
     }
-    .index-main .pizzas .pizzas-container .pproduct img{
+    .index-main .pizzas .pizzas-container .aproduct img{
         height: 300px;
     }
-    .index-main .empanadas .empanadas-container .eproduct{
+    .index-main .empanadas .empanadas-container .bproduct{
         height: 510px;
         width: 305px;
     }
-    .index-main .empanadas .empanadas-container .eproduct img{
+    .index-main .empanadas .empanadas-container .bproduct img{
         height: 300px;
     }
     .index-main .complementos .complementos-container .cproduct{
@@ -184,6 +184,13 @@
     .index-main .complementos .complementos-container .cproduct img{
         height: 300px;
     }
+    .comb-main .combos .combos-grid-container .comb-product{
+        height: 510px;
+        width: 305px;
+    }
+    .comb-main .combos .combos-grid-container .comb-product img{
+        height: 300px;
+    }
     .contacto-main .titulo-contacto-container h1 {
         font-size: 1.2rem;
     }
@@ -191,49 +198,49 @@
         font-size: 0.9rem;
         line-height: 20px;
     }
-    .main-combos.pagos-container-dos .moto-container {
+    .main-pagos.pagos-container-dos .moto-container {
         margin-right: 0;
     }
-    .main-combos.pagos-container-dos .moto-container img {
+    .main-pagos.pagos-container-dos .moto-container img {
         height: 75px;
     }
-    .main-combos.pagos-container-dos .moto-container h2 {
+    .main-pagos.pagos-container-dos .moto-container h2 {
         font-size: 1rem;
     }
-    .main-combos.pagos-container-dos .moto-container h3 {
+    .main-pagos.pagos-container-dos .moto-container h3 {
         font-size: 0.9rem;
     }
-    .main-combos.pagos-container-dos .moto-container h4 {
+    .main-pagos.pagos-container-dos .moto-container h4 {
         font-size: 0.7rem;
     }
-    .main-combos .pagos-container-tres .metodopago-uno img {
+    .main-pagos .pagos-container-tres .metodopago-uno img {
         height: 50px;
         margin: 0;
     }
-    .main-combos .pagos-container-tres .metodopago-uno h2 {
+    .main-pagos .pagos-container-tres .metodopago-uno h2 {
         font-size: 0.8rem;
     }
-    .main-combos .pagos-container-tres .metodopago-dos img {
+    .main-pagos .pagos-container-tres .metodopago-dos img {
         height: 50px;
         margin: 0;
     }
-    .main-combos .pagos-container-tres .metodopago-dos h2 {
+    .main-pagos .pagos-container-tres .metodopago-dos h2 {
         font-size: 0.8rem;
     }
-    .main-combos .pagos-container-tres .metodopago-tres img {
+    .main-pagos.pagos-container-tres .metodopago-tres img {
         height: 50px;
         margin: 0;
     }
-    .main-combos .pagos-container-tres .metodopago-tres h2 {
+    .main-pagos .pagos-container-tres .metodopago-tres h2 {
         font-size: 0.8rem;
     }
-    .main-combos .pagos-container-dos .moto-container h2{
+    .main-pagos .pagos-container-dos .moto-container h2{
         font-size: 1rem;
     }
-    .main-combos .pagos-container-dos .moto-container h3{
+    .main-pagos .pagos-container-dos .moto-container h3{
         font-size: 1rem;
     }
-    .main-combos .pagos-container-dos .moto-container h4{
+    .main-pagos .pagos-container-dos .moto-container h4{
         font-size: 0.7rem;
     }
 }
@@ -256,16 +263,16 @@
         font-size: 0.7rem;
     }
 
-    .main-combos .pagos-container-tres .metodopago-tres h2 {
+    .main-pagos .pagos-container-tres .metodopago-tres h2 {
         font-size: 0.7rem;
     }
-    .main-combos .pagos-container-dos .moto-container h2{
+    .main-pagos .pagos-container-dos .moto-container h2{
         font-size: 0.9rem;
     }
-    .main-combos .pagos-container-dos .moto-container h3{
+    .main-pagos .pagos-container-dos .moto-container h3{
         font-size: 0.9rem;
     }
-    .main-combos .pagos-container-dos .moto-container h4{
+    .main-pagos .pagos-container-dos .moto-container h4{
         font-size: 0.6rem;
     }
 }

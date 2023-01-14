@@ -1,6 +1,6 @@
 /*-----HEADER-----*/
 Header{
-    background-color: #111111;
+    background-color: $color-principal;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -19,7 +19,7 @@ Header{
         }
     }
     .navbar{
-        background-color: #111111;
+        background-color: $color-principal;
         .container-fluid{
             .navbar-toggler{
                 img{
@@ -42,7 +42,7 @@ Header{
                             }
                         }
                         .dropdown-menu{
-                            background-color: #111111;
+                            background-color: $color-principal;
                             border: solid 1px rgb(95, 93, 93);
                             li{
                                 display: inline-block;

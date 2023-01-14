@@ -1,7 +1,7 @@
 /*-----FOOTER-----*/
 Footer{
     .footer-grid{
-        background-color: #111111;
+        background-color: $color-principal;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 130px 130px;
@@ -11,9 +11,7 @@ Footer{
         ;
         .foot-logo{
             display: inline-block;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flextwo (flex, center, center);
             grid-column: 1 / 4;
             grid-area: logo;
             img{
@@ -22,36 +20,31 @@ Footer{
             }
         }
         .foot-horario{
-            display: flex;
-            justify-content: start;
+            @include flextwo (flex, start, flex-start);
             grid-area: horario;
             p{
-                color: white;
+                color: nth($color, 4 );
                 font-family: sans-serif, Arial, Helvetica;
                 font-size: small;
                 margin: 1rem;
             }
         }
         .foot-derechos{
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
+            @include flextwo (flex, center, flex-end);
             grid-area: derechos;
             p{
-                color: rgb(255, 255, 255);
+                color: nth($color, 4 );
                 font-family: sans-serif, Arial, Helvetica, 'Poppins';
                 font-size: x-small;
                 text-align: center;
             }
         }
         .foot-redes{
-            display: flex;
+            @include flextwo (flex, center, center);
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
             grid-area: redes;
             p{
-                color: rgb(255, 255, 255);
+                color: nth($color, 4 );
                 font-family: sans-serif, Arial, Helvetica, 'Poppins';
                 margin: 15px;
                 font-size: 1rem;
