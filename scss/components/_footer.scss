@@ -15,7 +15,6 @@ Footer{
             grid-column: 1 / 4;
             grid-area: logo;
             img{
-                height: 80px;
                 width: 140px;
             }
         }
@@ -47,12 +46,12 @@ Footer{
                 color: nth($color, 4 );
                 font-family: sans-serif, Arial, Helvetica, 'Poppins';
                 margin: 15px;
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             a{
                 img{
-                    height: 50px;
-                    width: 50px;
+                    height: 40px;
+                    width: 40px;
                     margin: 5px;
                 }
             }

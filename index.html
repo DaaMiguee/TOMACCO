@@ -19,17 +19,18 @@
 <body>
     <header id="inicio">
         <!-- BOOTSTRAP NAVBAR -->
-        <div class="logo-head">
-            <a class="navbar-brand" href="./index.html"><img src="./img/logo-new.png" alt="logo"></a>
-        </div>
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
+                <div class="logo-container">
+                    <a href="./index.html"><img class="navbar-logo" src="./img/logo-new.png" alt="logo"></a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation"><img src="./img/menu.png" alt="menu desplegable">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="navbar-menu" src="./img/menu.png" alt="menu desplegable">
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/combos.html">Combos</a>
                         </li>
@@ -54,6 +55,10 @@
                             </ul>
                         </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -67,10 +72,10 @@
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./img/portada-4.jpg" class="d-block w-100" alt="portada">
+                        <img src="./img/portada-1.jpg" class="d-block w-100" alt="portada">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/portada-5.jpg" class="d-block w-100" alt="portada 2">
+                        <img src="./img/portada-2.jpg" class="d-block w-100" alt="portada 2">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -85,6 +90,22 @@
                 </button>
             </div>
         </section>
+        <nav class="nav-two" data-aos="fade-up" data-aos-duration="1000">
+            <ul class="links-container">
+                <li class="links">
+                    <a href="./pages/combos.html">Promociones</a>
+                </li>
+                <li class="links">
+                    <a href="#pizza">Pizzas</a>
+                </li>
+                <li class="links">
+                    <a href="#empanada">Empanadas</a>
+                </li>
+                <li class="links">
+                    <a href="#complemento">Complementos</a>
+                </li>
+            </ul>
+        </nav>
         <section class="pizzas" id="pizza"><!--Seccion para pizzas-->
             <h2>Nuestras Pizzas</h2>
             <div class="pizzas-container">
@@ -218,8 +239,8 @@
                 <img src="./img/logo-new.png" alt="logo">
             </div>
             <div class="foot-horario">
-                <p>Horario de atención <br> Lunes de 11 a 15hs. <br> Martes a Jueves de 11 a 15hs. y de 18 a 23hs. <br>
-                    Viernes y Sábados de 11 a 15hs. y de 18 a 24hs. <br> Domingo Cerrado.</p>
+                <p>Horario de atención <br> Lunes Cerrado. <br> Martes a Jueves de 11 a 15hs. y de 18 a 23hs. <br>
+                    Viernes y Sábados de 11 a 15hs. y de 18 a 24hs. <br> Domingo de 11 a 15hs. y de 18 a 24hs.</p>
             </div>
             <div class="foot-derechos">
                 <p>© 2023 TODOS LOS DERECHOS RESERVADOS. TOMACCO.SA</p>

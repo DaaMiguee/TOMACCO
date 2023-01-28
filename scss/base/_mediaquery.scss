@@ -40,6 +40,9 @@
 }
 
 @media screen and (max-width:980px) {
+    .index-main .nav-two .links-container{
+        width: 80%;
+    }
     .main-combos .titulo-pagos h1{
         font-size: 1.7rem;
     }
@@ -50,7 +53,12 @@
         font-size: 0.6rem;
     }
 }
-
+@media screen and (max-width:991px){
+    header .navbar .container-fluid .logo-container{
+        top: 0;
+        margin-top: 28px;
+    }
+}
 @media screen and (max-width:880px) {
     .comb-main .combos .combos-grid-container {
         grid-template-columns: 1fr 1fr;
@@ -96,9 +104,6 @@
 }
 
 @media screen and (max-width:680px) {
-    header {
-        position: static;
-    }
     .subir {
         display: block;
     }
@@ -118,6 +123,13 @@
         margin-right: 30px;
         margin-bottom: 10px;
     }
+    .index-main .nav-two .links-container{
+        width: 80%;
+    }
+    .index-main .nav-two .links-container .links a{
+        font-size: 0.7rem;
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -128,6 +140,10 @@
 }
 
 @media screen and (max-width:560px) {
+    .index-main .nav-two .links-container .links a{
+        font-size: 0.7rem;
+        padding: 2px;
+    }
     .main-combos .titulo-pagos h1{
         font-size: 1.6rem;
     }
@@ -160,8 +176,8 @@
 }
 
 @media screen and (max-width:445px) {
-    header nav ul li a {
-        font-size: 0.8rem;
+    .index-main .nav-two .links-container{
+        width: 100%;
     }
     .index-main .pizzas .pizzas-container .aproduct{
         height: 470px;

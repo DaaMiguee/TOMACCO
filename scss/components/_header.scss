@@ -1,57 +1,63 @@
 /*-----HEADER-----*/
-Header{
-    background-color: $color-principal;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    box-shadow: 0px 3px 5px 0px #111111;
-    -webkit-box-shadow: 0px 3px 5px 0px #111111;
-    -moz-box-shadow: 0px 3px 5px 0px #111111;
-    .logo-head{
-        display: flex;
-        justify-content: center;
-        a{
-            img{
-                width: 90px;
-                height: 50px;
-            }
-        }
-    }
+header{
     .navbar{
         background-color: $color-principal;
         .container-fluid{
+            .logo-container{
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                a{
+                    .navbar-logo{
+                        width: 90px;
+                    }
+                }
+            }
             .navbar-toggler{
-                img{
-                    height: 20px;
+                color: $color-terciario;
+                .navbar-menu{
+                    width: 25px;
                 }
             }
             .collapse{
-                justify-content: center;
                 .navbar-nav{
-                    text-align: center;
                     .nav-item{
                         .nav-link{
-                            color: #ffffff;
-                            font-family: sans-serif;
-                            font-size: 0.9rem;
+                            color: nth($color , 4 );
+                            transition: all 200ms ease;
                             &:hover{
-                                color: #111111;
-                                background-color: #ffffff;
-                                border-radius: 2px;
+                                color: nth($color , 3 );
                             }
                         }
                         .dropdown-menu{
                             background-color: $color-principal;
-                            border: solid 1px rgb(95, 93, 93);
+                            border: solid #ffffff50 2px;
                             li{
-                                display: inline-block;
                                 .dropdown-item{
-                                    color: rgb(255, 255, 255);
+                                    color: nth($color , 4 );
                                     &:hover{
-                                        color: #626262;
+                                        background-color: $color-secundario;
+                                        color: nth($color , 1 );
                                     }
                                 }
                             }
+                        }
+                    }
+                }
+                .d-flex{
+                    .form-control{
+                        border: solid 2px $color-terciario;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                    .btn{
+                        color: nth($color , 4 );
+                        border: solid 2px $color-terciario;
+                        &:hover{
+                            background-color: $color-terciario;
                         }
                     }
                 }
