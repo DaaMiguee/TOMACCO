@@ -123,12 +123,11 @@
         margin-right: 30px;
         margin-bottom: 10px;
     }
-    .index-main .nav-two .links-container{
-        width: 80%;
+    .index-main .nav-two .links-container .links{
+        margin: 5px;
     }
     .index-main .nav-two .links-container .links a{
-        font-size: 0.7rem;
-        padding: 5px;
+        font-size: 0.8rem;
     }
 }
 
@@ -140,9 +139,8 @@
 }
 
 @media screen and (max-width:560px) {
-    .index-main .nav-two .links-container .links a{
-        font-size: 0.7rem;
-        padding: 2px;
+    .index-main .nav-two .links-container{
+        width: 90%;
     }
     .main-combos .titulo-pagos h1{
         font-size: 1.6rem;
@@ -177,7 +175,7 @@
 
 @media screen and (max-width:445px) {
     .index-main .nav-two .links-container{
-        width: 100%;
+        width: 98%;
     }
     .index-main .pizzas .pizzas-container .aproduct{
         height: 470px;
@@ -262,6 +260,12 @@
 }
 
 @media screen and (max-width:390px) {
+    .index-main .nav-two .links-container .links{
+        margin: 0;
+    }
+    .index-main .nav-two .links-container .links a{
+        padding: 8px;
+    }
     .contacto-main .titulo-contacto-container h1 {
         font-size: 1rem;
     }
