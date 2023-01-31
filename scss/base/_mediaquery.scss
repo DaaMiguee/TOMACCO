@@ -41,7 +41,7 @@
 
 @media screen and (max-width:980px) {
     .index-main .nav-two .links-container{
-        width: 80%;
+        width: 85%;
     }
     .main-combos .titulo-pagos h1{
         font-size: 1.7rem;
@@ -58,8 +58,17 @@
         top: 0;
         margin-top: 28px;
     }
+    header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link{
+        margin: 5px;
+    }
+    header .navbar .container-fluid .logo-container a .navbar-logo{
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width:880px) {
+    .index-main .nav-two .links-container{
+        width: 100%;
+    }
     .comb-main .combos .combos-grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
@@ -70,6 +79,9 @@
 }
 
 @media screen and (max-width:860px) {
+    .index-main h1{
+        font-size: 1.2rem;
+    }
     footer .footer-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 130px 130px;
@@ -123,9 +135,6 @@
         margin-right: 30px;
         margin-bottom: 10px;
     }
-    .index-main .nav-two .links-container .links{
-        margin: 5px;
-    }
     .index-main .nav-two .links-container .links a{
         font-size: 0.8rem;
     }
@@ -139,11 +148,32 @@
 }
 
 @media screen and (max-width:560px) {
-    .index-main .nav-two .links-container{
-        width: 90%;
+    .index-main h1{
+        font-size: 0.9rem;
     }
-    .main-combos .titulo-pagos h1{
-        font-size: 1.6rem;
+    .index-main .pizzas h2{
+        font-size: 1rem;
+    }
+    .index-main .empanadas h2{
+        font-size: 1rem;
+    }
+    .index-main .complementos h2{
+        font-size: 1rem;
+    }
+    .index-main .nav-two .links-container .links a{
+        padding: 15px 5px 15px 5px;
+    }
+    .comb-main .combos .combos-title h1{
+        font-size: 1rem;
+    }
+    .comb-main .combos .combos-title h2{
+        font-size: 0.9rem;
+    }
+    .main-pagos .titulo-pagos h1{
+        font-size: 1.3rem;
+    }
+    .main-sucursales .sucursales h1{
+        font-size: 1rem;
     }
     footer .footer-grid {
         grid-template-columns: 1fr;
@@ -174,8 +204,24 @@
 }
 
 @media screen and (max-width:445px) {
-    .index-main .nav-two .links-container{
-        width: 98%;
+    .index-main h1{
+        font-size: 0.8rem;
+    }
+    .index-main .pizzas h2{
+        font-size: 0.9rem;
+    }
+    .index-main .empanadas h2{
+        font-size: 0.9rem;
+    }
+    .index-main .complementos h2{
+        font-size: 0.9rem;
+    }
+    .index-main .nav-two .links-container .links{
+        margin: 0;
+    }
+    .index-main .nav-two .links-container .links a{
+        margin: 5px;
+        font-size: 0.7rem;
     }
     .index-main .pizzas .pizzas-container .aproduct{
         height: 470px;
@@ -197,6 +243,12 @@
     }
     .index-main .complementos .complementos-container .cproduct img{
         height: 300px;
+    }
+    .comb-main .combos .combos-title h1{
+        font-size: 0.9rem;
+    }
+    .comb-main .combos .combos-title h2{
+        font-size: 0.8rem;
     }
     .comb-main .combos .combos-grid-container .comb-product{
         height: 450px;
@@ -257,14 +309,20 @@
     .main-pagos .pagos-container-dos .moto-container h4{
         font-size: 0.7rem;
     }
+    .main-sucursales .sucursales h1{
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width:390px) {
-    .index-main .nav-two .links-container .links{
-        margin: 0;
+    .index-main h1{
+        font-size: 0.7rem;
     }
-    .index-main .nav-two .links-container .links a{
-        padding: 8px;
+    .comb-main .combos .combos-title h1{
+        font-size: 0.8rem;
+    }
+    .comb-main .combos .combos-title h2{
+        font-size: 0.7rem;
     }
     .contacto-main .titulo-contacto-container h1 {
         font-size: 1rem;
@@ -294,5 +352,8 @@
     }
     .main-pagos .pagos-container-dos .moto-container h4{
         font-size: 0.6rem;
+    }
+    .main-sucursales .sucursales h1{
+        font-size: 0.8rem;
     }
 }

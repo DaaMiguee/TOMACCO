@@ -11,12 +11,13 @@ header{
                 transform: translate(-50%, -50%);
                 a{
                     .navbar-logo{
-                        width: 90px;
+                        width: 100px;
                     }
                 }
             }
             .navbar-toggler{
                 color: $color-terciario;
+                margin: 13px 0 13px 0;
                 .navbar-menu{
                     width: 25px;
                 }
@@ -26,6 +27,8 @@ header{
                     .nav-item{
                         .nav-link{
                             color: nth($color , 4 );
+                            font-weight: 500;
+                            margin: 10px 0 10px 0;
                             transition: all 200ms ease;
                             &:hover{
                                 color: nth($color , 3 );

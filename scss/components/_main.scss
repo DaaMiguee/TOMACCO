@@ -14,6 +14,15 @@
             }
         }
     }
+    h1{
+        color: nth($color , 2 );
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 20px;
+        background-color: #62626227;
+    }
     .nav-two{
         position: sticky;
         top: 0;
@@ -25,13 +34,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: $color-secundario;
+            background-color: $color-cuaternario;
             width: 70%;
             height: 50px;
             margin: 0;
             padding: 0;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
+            border-radius: 15px;
             box-shadow: 0px 4px 10px -4px rgba(148,148,148,0.69);
             -webkit-box-shadow: 0px 4px 10px -4px rgba(148,148,148,0.69);
             -moz-box-shadow: 0px 4px 10px -4px rgba(148,148,148,0.69);
@@ -41,15 +49,15 @@
                 a{
                     text-decoration: none;
                     font-size: 1rem;
+                    font-weight: 600;
                     font-family: Arial, Helvetica, sans-serif;
-                    color: nth($color , 1 );
+                    color: nth($color , 2 );
                     border-radius: 10px;
-                    padding: 10px;
+                    padding: 15px;
                     transition: all 300ms ease;
                     &:hover{
-                        box-shadow: 0px 0px 12px -1px rgba(148,148,148,0.69);
-                        -webkit-box-shadow: 0px 0px 12px -1px rgba(148,148,148,0.69);
-                        -moz-box-shadow: 0px 0px 12px -1px rgba(148,148,148,0.69);
+                        background-color: $color-terciario;
+                        color: nth($color , 4 );
                     }
                 }
             }
@@ -63,14 +71,15 @@
             font-size: 1.2rem;
             color: nth($color , 2 );
             margin: 25px;
+            margin: 50px 20px 20px 20px;
         }
         .pizzas-container{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             .aproduct{
-                background-color: #faf6ee;
-                box-shadow: 0px 0px 4px 1px #1111111c;
+                background-color: #faf6eec3;
+                border: solid 1px #59595921;
                 display: inline-block;
                 height: 440px;
                 width: 255px;
@@ -79,11 +88,10 @@
                 position: relative;
                 transition-duration: 0.25s;
                 &:hover{
-                    transform: scale(1.03);
+                    transform: scale(1.01);
                     -webkit-box-shadow: 0px 0px 4px 2px #1111112a;
                     -moz-box-shadow: 0px 0px 4px 2px #1111112a;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
-                    background-color: #f8f0e2;
                 }
                 img{
                     height: 250px;
@@ -125,15 +133,15 @@
                     color: map-get($button, color-text );
                     background-color: map-get($button, bc );
                     border-radius: map-get($button, border-r );
-                    border: 3px solid #00795b;
+                    outline: 1px solid #00795b;
                     position: absolute;
                     right: 10px;
-                    bottom: 17px;
+                    bottom: 19px;
                     width: 100px;
                     transition-duration: 0.25s;
                     &:hover{
-                        background-color: #239746;
-                        border: 3px solid #239746;
+                        background-color: #00795b;
+                        color: nth($color , 4 );
                     }
                 }
                 p{
@@ -167,8 +175,8 @@
             justify-content: space-between;
             flex-wrap: wrap;
             .bproduct{
-                background-color: #faf6ee;
-                box-shadow: 0px 0px 4px 1px #1111111c;
+                background-color: #faf6eec3;
+                border: solid 1px #59595921;
                 display: inline-block;
                 height: 440px;
                 width: 255px;
@@ -177,11 +185,10 @@
                 position: relative;
                 transition-duration: 0.25s;
                 &:hover{
-                    transform: scale(1.03);
+                    transform: scale(1.01);
                     -webkit-box-shadow: 0px 0px 4px 2px #1111112a;
                     -moz-box-shadow: 0px 0px 4px 2px #1111112a;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
-                    background-color: #f8f0e2;
                 }
                 img{
                     height: 250px;
@@ -223,15 +230,15 @@
                     color: map-get($button, color-text );
                     background-color: map-get($button, bc );
                     border-radius: map-get($button, border-r );
-                    border: 3px solid #00795b;
+                    outline: 1px solid #00795b;
                     position: absolute;
                     right: 10px;
-                    bottom: 17px;
+                    bottom: 19px;
                     width: 100px;
                     transition-duration: 0.25s;
                     &:hover{
-                        background-color: #239746;
-                        border: 3px solid #239746;
+                        background-color: #00795b;
+                        color: nth($color , 4 );
                     }
                 }
                 p{
@@ -265,8 +272,8 @@
             justify-content: space-between;
             flex-wrap: wrap;
             .cproduct{
-                background-color: #faf6ee;
-                box-shadow: 0px 0px 4px 1px #1111111c;
+                background-color: #faf6eec3;
+                border: solid 1px #59595921;
                 display: inline-block;
                 height: 440px;
                 width: 255px;
@@ -275,11 +282,10 @@
                 position: relative;
                 transition-duration: 0.25s;
                 &:hover{
-                    transform: scale(1.03);
+                    transform: scale(1.01);
                     -webkit-box-shadow: 0px 0px 4px 2px #1111112a;
                     -moz-box-shadow: 0px 0px 4px 2px #1111112a;
                     box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
-                    background-color: #f8f0e2;
                 }
                 img{
                     height: 250px;
@@ -321,15 +327,15 @@
                     color: map-get($button, color-text );
                     background-color: map-get($button, bc );
                     border-radius: map-get($button, border-r );
-                    border: 3px solid #00795b;
+                    outline: 1px solid #00795b;
                     position: absolute;
                     right: 10px;
-                    bottom: 17px;
+                    bottom: 19px;
                     width: 100px;
                     transition-duration: 0.25s;
                     &:hover{
-                        background-color: #239746;
-                        border: 3px solid #239746;
+                        background-color: #00795b;
+                        color: nth($color , 4 );
                     }
                 }
                 p{
@@ -391,21 +397,20 @@
             }
         }
         .comb-product{
-            background-color: #faf6ee;
-            box-shadow: 0px 0px 8px 2px #1111111c;
+            background-color: #faf6eec3;
+            border: solid 1px #59595921;
             display: inline-block;
-            height: 450px;
+            height: 440px;
             width: 255px;
             margin: 15px;
             border-radius: 15px;
             position: relative;
             transition-duration: 0.25s;
             &:hover{
-                transform: scale(1.03);
-                -webkit-box-shadow: 0px 0px 8px 2px #1111112a;
-                -moz-box-shadow: 0px 0px 8px 2px #1111112a;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.479);
-                background-color: #fff5e3;
+                transform: scale(1.01);
+                -webkit-box-shadow: 0px 0px 4px 2px #1111112a;
+                -moz-box-shadow: 0px 0px 4px 2px #1111112a;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.479);
             }
             img{
                 height: 250px;
@@ -457,15 +462,15 @@
                 color: map-get($button, color-text );
                 background-color: map-get($button, bc );
                 border-radius: map-get($button, border-r );
-                border: 3px solid #00795b;
+                outline: 1px solid #00795b;
                 position: absolute;
                 right: 10px;
-                bottom: 17px;
+                bottom: 19px;
                 width: 100px;
                 transition-duration: 0.25s;
                 &:hover{
-                    background-color: #239746;
-                    border: 3px solid #239746;
+                    background-color: #00795b;
+                    color: nth($color , 4 );
                 }
             }
         }
@@ -725,13 +730,14 @@
         display: inline-block;
         justify-content: center;
         width: 100%;
-        h2{
+        h1{
             text-align: center;
             font-family: 'Poppins', sans-serif;
             font-size: 1.3rem;
             font-weight: 600;
             color: nth($color , 2 );
-            margin: 50px;
+            margin: 30px;
+            padding: 10px;
         }
         .maps-container{
             background-color: $color-secundario;
