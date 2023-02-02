@@ -547,9 +547,10 @@
                 }
                 .textarea-container{
                     textarea{
+                        width: 100%;
                         background-color: $color-secundario;
                         border: 0;
-                        padding: 15px;
+                        padding: 10px;
                         font-size: 0.9rem;
                         resize: none;
                         border-radius: 10px;
